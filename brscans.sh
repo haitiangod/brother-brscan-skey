@@ -131,9 +131,6 @@ noninteractivepod() {
 
     customlog "D" "The value of DENSITY is: $DENSITY, COMPRESS is: $COMPRESS, QUALITY is: $QUALITY, MONOCHROME is: $MONOCHROME"
 
-    rm -rf *.pdf
-    cp "$original" "$F"
-
     # Set monochrome option
     if [ "$MONOCHROME" = "true" ]; then
         MONOCHROME_OPTION="-monochrome"
