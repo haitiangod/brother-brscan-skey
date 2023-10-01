@@ -1,0 +1,20 @@
+version: "3.1"
+
+services:
+  brother-brscan-skey:
+    image: haitiangod/brother-brscan-skey
+    container_name: brother-brscan-skey
+    environment:
+      - NAME=Scanner
+      - MODEL=MFC-L2710DW
+      - IPADDRESS=192.168.1.41
+      - DENSITY=150
+      - COMPRESS=jpeg
+      - QUALITY=100
+      - MONOCHROME=false
+    volumes:
+      - /mnt/scans:/scans
+      - /var/brscans:/var/brscans
+      - /var/log:/var/log
+    network_mode: host
+    restart: always
