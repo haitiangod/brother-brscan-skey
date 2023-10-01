@@ -67,6 +67,5 @@ The architectures supported by this image are:
 | :----------: | :-------: | --------------------- |
 |    x86-64    |    ✅     | amd64-<version tag>   |
 |    arm64     |    ✅     | arm64v8-<version tag> |
-|    armhf     |    ❌     |                       |
 
 Replace `<version tag>` with the tag of the version you wish to use.
