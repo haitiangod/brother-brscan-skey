@@ -57,15 +57,4 @@ These environment variables allow you to customize the PDF conversion process to
 
 ## Supported Architectures
 
-This Docker image utilizes Docker manifest for multi-platform awareness. More information on Docker manifest can be found [here](https://github.com/docker/distribution/blob/master/docs/spec/manifest-v2-2.md#manifest-list).
-
-When pulling `haitiangod/brother-brscan-skey:latest`, Docker should automatically select the correct image for your architecture. However, you can also pull specific architecture images via tags.
-
-The architectures supported by this image are:
-
-| Architecture | Supported | Tag                   |
-| :----------: | :-------: | --------------------- |
-|    x86-64    |    ✅     | amd64-<version tag>   |
-|    arm64     |    ✅     | arm64v8-<version tag> |
-
-Replace `<version tag>` with the tag of the version you wish to use.
+When pulling `haitiangod/brother-brscan-skey:latest`, Docker should automatically select the correct image for your architecture.
